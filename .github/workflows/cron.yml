@@ -24,6 +24,12 @@ jobs:
       - name: 运行爬虫
         run: python main.py
 
+      - name: 发送结果邮件
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_TO_ADDR: ${{ secrets.MAIL_TO_ADDR }}
+        run: python src/send_email.py || echo "邮件发送失败（不影响结果提交）"
+
       - name: 提交结果
         run: |
           git config user.name "github-actions[bot]"
