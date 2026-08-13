@@ -1,10 +1,26 @@
 {
-  "crawled_at": "2026-08-13 12:28:40",
+  "crawled_at": "2026-08-13 04:43:25",
   "price_threshold": 5.0,
   "low_stock_count": 435,
   "news_count": 250,
-  "match_count": 1,
+  "match_count": 2,
   "matches": [
+    {
+      "news": {
+        "source": "新浪财经",
+        "title": "大摩：腾讯控股维持“增持”评级 目标价降至550港元",
+        "summary": "摩根士丹利发布研报称，腾讯控股（00700）核心业务基本面稳健，但因加大人工智能投资，预计2026年下半年至2027年盈利将大致持平，决定将目标价由650港元下调至550港元...",
+        "url": "https://finance.sina.com.cn/stock/hkstock/hkgg/2026-08-13/doc-inincxku3329289.shtml",
+        "time": "1786596095"
+      },
+      "related_stocks": [
+        {
+          "code": "N/A",
+          "name": "通用利好",
+          "price": null
+        }
+      ]
+    },
     {
       "news": {
         "source": "新浪财经",
