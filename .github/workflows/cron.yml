@@ -1,9 +1,6 @@
 name: 低价股利好新闻定时爬取
 
 on:
-  schedule:
-    # 每天 10:00 和 17:00（Asia/Shanghai，即 UTC 02:00 / 09:00）
-    - cron: '0 2,9 * * *'
   workflow_dispatch:
 
 permissions:

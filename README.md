@@ -26,4 +26,4 @@ python main.py
 
 ## 定时任务
 
-`.github/workflows/cron.yml` 使用 GitHub Actions 定时触发，每天 10:00 与 17:00（Asia/Shanghai）自动运行并提交结果到仓库。
+使用 cron-job.org 外部调度触发 `.github/workflows/cron.yml` 的 `workflow_dispatch`，每天 10:00 与 17:00（Asia/Shanghai）自动运行并提交结果到仓库。
