@@ -6,6 +6,9 @@ on:
     - cron: '0 2,9 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
@@ -32,6 +35,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "无变化，跳过提交"
           else
-            git commit -m "chore: 定时更新低价股利好新闻 $(date -u +'%Y-%m-%d %H:%M' UTC)"
+            git commit -m "chore: 定时更新低价股利好新闻 $(date -u +'%Y-%m-%d %H:%M') UTC"
             git push
           fi
